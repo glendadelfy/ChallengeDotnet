@@ -38,6 +38,29 @@ Cadastro dentista
 Login do dentista 
 Paciente cadastro 
 Agenda com detalhes de procedimentos  
+
+
+4) Projeto .NET (Camada Application) 
+4.1 Criação da solução .net
+4.2 Implementação de domínio 
+-Criação das entidades. 
+-Interfaces de repositório. 
+-Regas de negócio. 
+
+ 
+
+4.3 Implementação da camada de aplicação  
+Serviço de aplicação.  
+Manipulação de erros. 
+Dtos(Data Transfer Object).  
+
+4.4 Implementação de camada de infraestutura 
+Mapeamento de Entidades (EntityFramework Core). 
+Repositorios Concretos 
+Integrações Externas 
+Migrações de Banco de dados Oracle. 
+
+ 
  
 
  
