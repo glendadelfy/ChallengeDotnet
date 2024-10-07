@@ -9,7 +9,7 @@ namespace ProjetoOdontoprev.Models
         [Key]
         public int Id { get; set; }
         [Column("nome_dentista")]
-        public string Nome { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
         [Column("email_dentista")]
         [Required]
         [EmailAddress]

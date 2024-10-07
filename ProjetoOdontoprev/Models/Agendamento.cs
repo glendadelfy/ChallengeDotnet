@@ -9,10 +9,11 @@ namespace ProjetoOdontoprev.Models
     {
         [Key]
         public int Id { get; set; }
-        [Column("data_agenda")]
         [Required]
+        [Column("data_agenda")]
         public DateTime DataAgendamento { get; set; }
         [Column("descricao_agenda")]
+        [Required]
         public string Descricao { get; set; }
     }
 }

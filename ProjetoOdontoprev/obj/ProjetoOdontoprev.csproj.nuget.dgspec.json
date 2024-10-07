@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\glend\\source\\repos\\ProjetoOdontoprev\\ProjetoOdontoprev\\ProjetoOdontoprev.csproj": {}
+    "C:\\Users\\glend\\ChallengeDotnet\\ProjetoOdontoprev\\ProjetoOdontoprev.csproj": {}
   },
   "projects": {
-    "C:\\Users\\glend\\source\\repos\\ProjetoOdontoprev\\ProjetoOdontoprev\\ProjetoOdontoprev.csproj": {
+    "C:\\Users\\glend\\ChallengeDotnet\\ProjetoOdontoprev\\ProjetoOdontoprev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\glend\\source\\repos\\ProjetoOdontoprev\\ProjetoOdontoprev\\ProjetoOdontoprev.csproj",
+        "projectUniqueName": "C:\\Users\\glend\\ChallengeDotnet\\ProjetoOdontoprev\\ProjetoOdontoprev.csproj",
         "projectName": "ProjetoOdontoprev",
-        "projectPath": "C:\\Users\\glend\\source\\repos\\ProjetoOdontoprev\\ProjetoOdontoprev\\ProjetoOdontoprev.csproj",
+        "projectPath": "C:\\Users\\glend\\ChallengeDotnet\\ProjetoOdontoprev\\ProjetoOdontoprev.csproj",
         "packagesPath": "C:\\Users\\glend\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\glend\\source\\repos\\ProjetoOdontoprev\\ProjetoOdontoprev\\obj\\",
+        "outputPath": "C:\\Users\\glend\\ChallengeDotnet\\ProjetoOdontoprev\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\glend\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,26 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.21.140, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
