@@ -1,7 +1,27 @@
+using Microsoft.EntityFrameworkCore;
+using ProjetoOdontoprev.Context;
+using ProjetoOdontoprev.Repositorys.Implementations;
+using ProjetoOdontoprev.Repositorys.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromSeconds(60);
+    options.Cookie.Name = "_AplicationSessions";
+    options.Cookie.IsEssential = true;
+});
+
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection"));
+});
+
+builder.Services.AddScoped<IUsuarioAuthentication, UsuarioAuthentication>();
 
 var app = builder.Build();
 
@@ -19,6 +39,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
